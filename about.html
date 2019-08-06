@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+<!--This page was created by Zachary Williams on October 13th, 2018 -->
+<title>Meetusa</title>
+<link href="AQP.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+<div id="wrapper" style="min-height: 500px;">
+
+	<div id="navbar">
+		<ul>
+			<li><br></li>
+			<li><h1>AQP Instructions</h1></li>
+			<li style="font-size: 14px; padding-top: 8px; text-align: center;">
+				<script>
+					function getQueryVariable(variable) {
+						var query = window.location.search.substring(1);
+						var vars = query.split('&');
+						for (var i = 0; i < vars.length; i++) {
+							var pair = vars[i].split('=');
+							if (decodeURIComponent(pair[0]) == variable) {
+								return decodeURIComponent(pair[1]);
+							}
+						}
+						console.log('Query variable %s not found', variable);
+					}
+					console.log(getQueryVariable('Username'));
+					if(getQueryVariable('Username') != undefined){
+						document.write("Username: " + getQueryVariable('Username'));
+					}
+				</script>
+			</li>
+			<li><br></li>
+		</ul>
+	</div>
+	<div style="margin: 5%;">
+	<p style="font-size: 14px;">
+		Hello<script>if(getQueryVariable('Username') != undefined){document.write(", " + getQueryVariable('Username'));}</script>! Welcome to FIAA experiment. By participating this experiment, you will have a chance to win a $25 Amazon Gift Card!
+	</p>
+	<br>
+	
+	<h4>The purpose of this study</h4>
+	<ul style="list-style-position: outside;">
+		<li>To determine image features that correlate with photo aesthetic quality, in hopes of being able to electronically predict whether an image will be liked by humans.</li>
+	</ul>
+	<br><br>
+	
+	<h4>What you need to do</h4>
+	<ul style="list-style-position: outside;">
+	<li>You will be shown an fashion image from internet. If you like the aesthetic quality of the image, please press 
+		<form action="" style="display:inline-block;">
+			<input type="submit" name="like" value="Like" style="background: #0F0; color: #FFF; width:100%; font-size: 14px; height: 20px; border-radius: 4px;"/>
+		</form>. 
+		If you don’t like this image, or this image does not particularly impress you, please press
+		<form action="" style="display:inline-block;">
+			<input type="submit" name="like" value="Pass" style="background: #F00; color: #FFF; width:100%; font-size: 14px; height: 20px; border-radius: 4px;"/>
+		</form>.
+	</li>
+	</ul>
+	<br><br>
+	
+	<h4>How long am I expected to do the experiment for?</h4>
+	<ul style="list-style-position: outside;">
+	<li>For a single image, we are expecting human subjects to review for 2-3 seconds before making a judgement.</li>
+	<li>To enter the raffle, you have to do at least 200 images. However, the experiment will not stop there. You are encouraged to review more images beyond 200 images: the more image you review, the bigger your winning chance is!</li>
+	<li>Our website is designed to be mobile-friendly and desktop-friendly, so that you can go to the website whenever you want to do the experiment. We highly recommend you to use your spare time to review some images. This makes a lot of difference!</li>
+	</ul>
+	<br><br>
+	
+	<img src="amazon-gift-card-25.png" style="float: right; max-height: 250px;"/>
+	<h4>Things to consider or not to consider</h4>
+	<ul style="list-style-position: outside;">
+	<img src="redx.png" style="float: left; max-height: 50px; padding-right: 20px; margin-left: -60px"/>
+	<li>Attractiveness of the model or other objects (e.g.: puppies, celebrities)</li>
+	<li>Messages contained in the image (e.g.: political or sensitive information)</li>
+	<li>Personal preferences on fashion garment</li>
+	<br>
+	<img src="greencheck.png" style="float: left; max-height: 60px; max-width: 50px; padding-right: 20px; margin-left: -70px"/>
+	<li>If the image clearly shows the garment</li>
+	<li>If the image is crisp and clear</li>
+	<li>If the image has good lighting</li>
+	<li>If the image has good composition</li>
+	</ul>
+	<br><br>
+	
+	<h4>To enter raffle prize...</h4>
+	<ul style="list-style-position: outside;">
+	<li>You have to review at least 200 images</li>
+	<li>The more images your review, the bigger your winning chance is!</li>
+	<li>One can only win one gift card, so no double winning.</li>
+	<li>The raffle prizes will be drawn on Nov. 11th 12pm.</li>
+	<li>A confirmation email will be sent to the winners by using the username. Once the winner confirms, we will send a $25 gift card to the winner.</li>
+	</ul>
+	<script>
+		if(getQueryVariable('Username') != undefined){
+			document.write('<form action="index.html" style="font-size: 16px;  float: left;">');
+			document.write("<input type=\"hidden\" name=\"Username\" value=\"" + getQueryVariable('Username') + "\"/>");
+		}
+		else {
+			document.write('<form action="login.html" style="font-size: 16px;  float: left;">');
+		}
+	</script>
+		<input type="submit" value="  Save and Continue  " style="font-size: 16px; background-color: #4286f4; border-radius: 10px; min-height: 32px; margin-left: 190%;">
+	</form>
+	</div>
+ 
+	
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+#wrapper {
+	padding: 0px;
+	width: auto;
+	max-width: 940px;
+	min-width: 845px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	padding-bottom: 5px;
+	background: #FFF;
+	border-radius: 10px;
+}
+body {
+	font: 12px Helvetica, Arial, sans-serif;
+	background: #000;
+}
+h1 {
+	font: 28px Helvetica, "Courier New", Courier, monospace;
+	color: #FFF;
+	background: #98700D;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 10px 10px 0px 0px;
+}
+h2 {
+	font: 24px Helvetica, "Courier New", Courier, monospace;
+	color: #98700D;
+}
+h3 {
+	font: 20px Helvetica, "Courier New", Courier, monospace;
+	color: #98700D;
+}
+
+h4 {
+	font: 18px Helvetica, "Courier New", Courier, monospace;
+	margin: 0px;
+}
+#profile {
+	background: FFF;
+	text-align: justify;
+	position: relative;
+}
+#profile ul {
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+#profile ul li {
+	text-decoration: none;
+	float: center;
+	list-style: none;
+	text-align: center;
+}
+#centerNav {
+	background: 000;
+	font-size: 30px;
+}
+#centerNav ul {
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+#centerNav ul li {
+	text-decoration: none;
+	width: 48%;
+	float: left;
+	margin-left: 1%;
+	list-style: none;
+	text-align: center;
+}
+#centerNav a {
+	color: #FFF;
+	display: block;
+	border-radius: 10px;
+	background: #98700D;
+	padding: 10px;
+	text-decoration: none;
+}
+#centerNav a:hover {
+	color: #FFF;
+	background: #C28E0E;
+	padding: 10px;
+	text-decoration: none;
+}
+#centerNav a:active {
+	color: #FFF;
+	background: #000;
+}
+#navbar {
+	font: 28px Helvetica, "Courier New", Courier, monospace;
+	color: #FFF;
+	background: #98700D;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 10px 10px 0px 0px;
+	position: relative;
+	display: block;
+}
+#navbar ul {
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+#navbar ul li {
+	text-decoration: none;
+	width: 33.33333%;
+	float: left;
+	list-style: none;
+	text-align: center;
+}
+
+#navbar a {
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0, 0);
+}
+#navbar a:hover {
+	background: #3D44AA;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+}
+#navbar a:active {
+	color: #FFF;
+	background: #000;
+}
+#login {
+	background: FFF;
+	position: relative;
+}
+#login ul {
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+#login ul li {
+	text-decoration: none;
+	float: left;
+	list-style: none;
+	text-align: center;
+	padding: 5%;
+}
